@@ -1,0 +1,9 @@
+.survey-container {
+  padding: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .survey-container {
+    padding: 1rem;
+  }
+}

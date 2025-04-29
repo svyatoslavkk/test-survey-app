@@ -1,0 +1,15 @@
+.question-block {
+  margin-bottom: 2rem;
+}
+
+.question-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .question-title {
+    font-size: 1.125rem;
+  }
+}

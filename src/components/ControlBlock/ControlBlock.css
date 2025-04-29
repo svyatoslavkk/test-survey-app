@@ -1,0 +1,62 @@
+.control-block {
+  margin-top: 2rem;
+}
+
+.progress-container {
+  height: 2rem;
+  background-color: #f3f4f6;
+  border-radius: 0.125rem;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #22c55e;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    rgba(0, 0, 0, 0.05) 10px,
+    rgba(0, 0, 0, 0.05) 20px
+  );
+  border-radius: 0.125rem;
+  transition: width 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.next-button {
+  padding: 0.5rem 2rem;
+  background-color: #64748b;
+  color: white;
+  border: none;
+  border-radius: 0.125rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.next-button:hover:not(.disabled) {
+  background-color: #475569;
+}
+
+.next-button.disabled {
+  background-color: #d1d5db;
+  cursor: not-allowed;
+}
